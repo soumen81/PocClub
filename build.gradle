@@ -1,0 +1,66 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext.kotlin_version = "1.4.10"
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.1.0"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "android.arch.navigation:navigation-safe-args-gradle-plugin:1.0.0-alpha05"
+        classpath 'com.google.gms:google-services:4.1.0'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+
+ext.deps = [:]
+def versions = [:]
+versions.lifecycle = "1.1.1"
+versions.roomVersion = "1.1.1"
+versions.support = "28.0.0"
+versions.supportLibraryVersion = "28.0.0"
+versions.kotlin = "1.2.20"
+versions.navigation = "1.0.0-alpha08"
+versions.min_sdk = 21
+versions.target_sdk = 29
+versions.constraint_layout = "1.1.3"
+versions.glide = "4.3.1"
+versions.circleView="2.2.0"
+versions.recyclerView="26.1.0"
+versions.map="16.1.0"
+versions.retrofitVersion = "2.5.0"
+versions.okhttpVersion = "3.4.1"
+versions.timberVersion = "4.6.1"
+versions.daggerVersion = "2.20"
+versions.map="16.0.0"
+versions.gson="2.8.2"
+versions.sdp="1.0.5"
+versions.ssp="1.0.4"
+versions.gif="1.2.16"
+versions.chart="v2.2.4"
+
+
+versions.appcompat="1.1.0-alpha01"
+versions.corektx="1.1.0-alpha04"
+versions.legacysupport="1.0.0-beta01"
+versions.material="1.0.0"
+versions.junit="4.12"
+versions.constraintlayout="1.1.3"
+versions.testrunner="1.1.0-alpha4"
+versions.espressocore="3.1.0-alpha4"
+versions.multidex="1.0.0"
+ext.versions = versions

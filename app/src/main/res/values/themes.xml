@@ -1,0 +1,101 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowDisablePreview">true</item>
+
+        <item name="colorControlNormal">@color/editTextBorderColor</item>
+        <item name="colorControlActivated">@color/colorGreen</item>
+        <item name="colorControlHighlight">@color/editTextBorderColor</item>
+    </style>
+
+    <style name="AppTheme.StatusBarTransparent">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+
+    <style name="Style_TextView_Font">
+        <item name="fontFamily">@font/myriadproregular</item>
+
+    </style>
+
+    <!--Style for TextView Title-->
+    <style name="StyleTvCommonTitle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:fontFamily">@font/myriadproregular</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/colorGreen</item>
+        <item name="android:textSize">@dimen/font_9sp</item>
+    </style>
+
+    <style name="StyleTvSubTitle">
+        <item name="android:ellipsize">end</item>
+        <item name="android:fontFamily">@font/myriadproregular</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/colorAshDeeper</item>
+        <item name="android:textSize">@dimen/font_6sp</item>
+    </style>
+
+    <style name="StyleCommonDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="StyleViewHorizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_2dp</item>
+        <item name="android:layout_marginTop">@dimen/dimen_10dp</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_10dp</item>
+        <item name="android:background">@color/colorAshLighterDip</item>
+    </style>
+
+    <style name="DialogAnimations" />
+    <style name="DialogAnimations.SmileWindow">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_top</item>
+    </style>
+
+    <style name="Style_TextView">
+        <item name="fontFamily">@font/myriadproregular</item>
+        <item name="colorControlNormal">@color/buttonborder</item>
+        <item name="colorControlActivated">@color/buttonborder</item>
+        <item name="colorControlHighlight">@color/buttonborder</item>
+        <!-- <item name="android:textSize">16sp</item>-->
+
+    </style>
+    <style name="ToolbarTheme"
+        parent="Widget.AppCompat.Toolbar">
+        <item name="actionMenuTextColor">@color/ripplecolor</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="actionButtonStyle">@style/Widget.AppCompat.ActionButton</item>
+        <item name="selectableItemBackground">?android:selectableItemBackground</item>
+        <item name="selectableItemBackgroundBorderless">?android:selectableItemBackground</item>
+        <item name="colorControlHighlight">@color/ripplecolor</item>
+    </style>
+</resources>
