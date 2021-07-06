@@ -8,10 +8,11 @@ import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.FragmentManager
 import com.autumntechcreation.pocclub.PocClubApp
 import com.autumntechcreation.pocclub.di.component.module.AppModule
-import com.autumntechcreation.fvstore.di.component.DaggerAppComponent
+import com.autumntechcreation.pocclub.di.component.DaggerAppComponent
 import dagger.android.AndroidInjection
+import dagger.android.HasAndroidInjector
 import dagger.android.support.AndroidSupportInjection
-import dagger.android.support.HasSupportFragmentInjector
+
 
 object AppInjector {
     fun init(pocClubApp: PocClubApp) {
@@ -50,7 +51,7 @@ object AppInjector {
     }
 
     private fun handleActivity(activity: Activity) {
-        if (activity is HasSupportFragmentInjector) {
+        if (activity is HasAndroidInjector) {
             AndroidInjection.inject(activity)
         }
         if (activity is FragmentActivity) {

@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">PocClub</string>
+
+    <!--Alert-->
+    <string name="sorry_you_not_online_msg">Sorry! You are not online anymore</string>
+    <string name="alert_please_enter_enterprise_name">Please enter Enterprise name</string>
+    <string name="alert_please_enter_valid_url">Please enter Valid Url</string>
+
+    <string name="please_enter_user_name">Please enter Valid User name</string>
+    <string name="please_enter_valid_password">Please enter Valid Password</string>
+
+    <string name="validation_error">Validation Error</string>
+
+    <string name="nointernet">No Internet</string>
+    <string name="nointernetdetails">We are unable to connect Internet,Please stay with us</string>
+    <string name="press_again_exit_app">Press again to exit</string>
+    <string name="ok">Ok</string>
+
+    <!--Alert-->
 </resources>

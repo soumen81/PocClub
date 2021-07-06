@@ -6,6 +6,7 @@ plugins {
     id 'kotlin-kapt'
 }
 
+
 android {
     compileSdkVersion 30
     buildToolsVersion "29.0.3"
@@ -32,6 +33,18 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+
+
+    buildFeatures {
+
+        dataBinding true
+
+
+    }
+    kapt {
+       // generateStubs = true
+        correctErrorTypes = true
     }
 }
 
@@ -104,7 +117,7 @@ dependencies {
     //Dagger
     implementation "com.google.dagger:dagger-android:$versions.daggerVersion"
     annotationProcessor "com.google.dagger:dagger-android-processor:$versions.daggerVersion"
-    annotationProcessor "com.google.dagger:dagger-compiler:$versions.daggerVersion"
+    //annotationProcessor "com.google.dagger:dagger-compiler:$versions.daggerVersion"
 
     // dagger kotlin
     implementation "com.google.dagger:dagger:$versions.daggerVersion"
@@ -112,6 +125,14 @@ dependencies {
     kapt "com.google.dagger:dagger-android-processor:$versions.daggerVersion"
     kapt "com.google.dagger:dagger-compiler:$versions.daggerVersion"
     implementation "com.google.dagger:dagger-android:$versions.daggerVersion"
+
+
+
+
+
+
+
+
 
     //moshi
     // implementation "com.squareup.moshi:moshi-kotlin:1.5.0"

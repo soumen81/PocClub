@@ -17,6 +17,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+       <!-- <activity
+            android:screenOrientation="portrait"
+            android:name="com.autumntechcreation.pocclub.MainActivity"
+            android:theme="@style/AppTheme.StatusBarTransparent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />-->
+
     </application>
 
 </manifest>
