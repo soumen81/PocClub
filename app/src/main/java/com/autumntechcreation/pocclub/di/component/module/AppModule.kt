@@ -1,7 +1,9 @@
 package com.autumntechcreation.pocclub.di.component.module
 
 import android.app.Application
+import androidx.lifecycle.ViewModelProvider
 import com.autumntechcreation.pocclub.network.Webservice
+import com.autumntechcreation.pocclub.ui.register.RegisterModelFactory
 import dagger.Module
 import dagger.Provides
 import retrofit2.Retrofit
@@ -18,4 +20,9 @@ class AppModule(val app: Application) {
     internal fun provideWebservice(retrofit: Retrofit): Webservice {
         return retrofit.create(Webservice::class.java)
     }
+
+
+    @Provides
+    @Singleton
+    fun provideRegisterModelFactory(factory: RegisterModelFactory): ViewModelProvider.Factory = factory
 }
