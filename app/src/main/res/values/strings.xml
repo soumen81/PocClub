@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">PocClub</string>
+    <string name="sorry_you_not_online_msg">Sorry! You are not online anymore</string>
+    <string name="ok">Ok</string>
 </resources>
