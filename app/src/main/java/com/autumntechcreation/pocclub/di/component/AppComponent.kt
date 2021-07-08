@@ -1,4 +1,4 @@
-package com.autumntechcreation.fvstore.di.component
+package com.autumntechcreation.pocclub.di.component
 
 
 import com.autumntechcreation.pocclub.PocClubApp
