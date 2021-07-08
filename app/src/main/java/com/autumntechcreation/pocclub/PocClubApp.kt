@@ -4,22 +4,21 @@ import android.app.Activity
 import android.app.Application
 import android.content.Context
 import androidx.fragment.app.Fragment
+import androidx.multidex.BuildConfig
 import androidx.multidex.MultiDex
 import com.autumntechcreation.pocclub.di.component.DaggerAppComponent
 import com.facebook.stetho.Stetho
 import com.autumntechcreation.pocclub.di.component.AppInjector
 import com.autumntechcreation.pocclub.di.component.module.AppModule
 import com.autumntechcreation.pocclub.network.ConnectivityReceiver
-
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
-import dagger.android.HasAndroidInjector
-/*import dagger.android.HasActivityInjector
-import dagger.android.support.HasSupportFragmentInjector*/
+import dagger.android.HasActivityInjector
+import dagger.android.support.HasSupportFragmentInjector
 import timber.log.Timber
 import javax.inject.Inject
 
-class PocClubApp : Application(), HasAndroidInjector {
+class PocClubApp : Application(), HasActivityInjector, HasSupportFragmentInjector {
 
     @Inject
     lateinit var activityInjector: DispatchingAndroidInjector<Activity>
@@ -47,11 +46,11 @@ class PocClubApp : Application(), HasAndroidInjector {
 
     }
 
-    fun activityInjector(): AndroidInjector<Activity> {
+    override fun activityInjector(): AndroidInjector<Activity> {
         return activityInjector
     }
 
-    fun supportFragmentInjector(): AndroidInjector<Fragment> {
+    override fun supportFragmentInjector(): AndroidInjector<Fragment> {
         return fragmentInjector
     }
 
@@ -67,10 +66,6 @@ class PocClubApp : Application(), HasAndroidInjector {
 
     companion object {
         lateinit var instance: PocClubApp
-    }
-
-    override fun androidInjector(): AndroidInjector<Any> {
-        TODO("Not yet implemented")
     }
 
 }
