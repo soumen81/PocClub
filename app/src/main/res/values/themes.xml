@@ -31,10 +31,7 @@
 
 
 
-    <style name="Style_TextView_Font">
-        <item name="fontFamily">@font/myriadproregular</item>
 
-    </style>
 
     <!--Style for TextView Title-->
     <style name="StyleTvCommonTitle">
@@ -79,14 +76,7 @@
         <item name="android:windowExitAnimation">@anim/slide_out_top</item>
     </style>
 
-    <style name="Style_TextView">
-        <item name="fontFamily">@font/myriadproregular</item>
-        <item name="colorControlNormal">@color/buttonborder</item>
-        <item name="colorControlActivated">@color/buttonborder</item>
-        <item name="colorControlHighlight">@color/buttonborder</item>
-        <!-- <item name="android:textSize">16sp</item>-->
 
-    </style>
     <style name="ToolbarTheme"
         parent="Widget.AppCompat.Toolbar">
         <item name="actionMenuTextColor">@color/ripplecolor</item>
@@ -97,5 +87,50 @@
         <item name="selectableItemBackground">?android:selectableItemBackground</item>
         <item name="selectableItemBackgroundBorderless">?android:selectableItemBackground</item>
         <item name="colorControlHighlight">@color/ripplecolor</item>
+    </style>
+
+    <style name="Style_TextView_FontBold">
+        <item name="fontFamily">@font/opensans_bold</item>
+    </style>
+    <style name="Style_TextView_FontBoldItalic">
+        <item name="fontFamily">@font/opensans_bolditalic</item>
+    </style>
+    <style name="Style_TextView_FontExtraBold">
+        <item name="fontFamily">@font/opensans_extrabold</item>
+    </style>
+    <style name="Style_TextView_FontExtraBoldItalic">
+        <item name="fontFamily">@font/opensans_extrabolditalic</item>
+    </style>
+    <style name="Style_TextView_FontItalic">
+        <item name="fontFamily">@font/opensans_italic</item>
+    </style>
+    <style name="Style_TextView_FontLight">
+        <item name="fontFamily">@font/opensans_light</item>
+    </style>
+    <style name="Style_TextView_FontLightItalic">
+        <item name="fontFamily">@font/opensans_lightitalic</item>
+    </style>
+    <style name="Style_TextView_FontRegular">
+        <item name="fontFamily">@font/opensans_regular</item>
+    </style>
+    <style name="Style_TextView_FontSemiBold">
+        <item name="fontFamily">@font/opensans_semibold</item>
+    </style>
+    <style name="Style_TextView_FontSemiBoldItalic">
+        <item name="fontFamily">@font/opensans_semibolditalic</item>
+    </style>
+
+
+    <style name="Style_TextView_Font">
+        <item name="fontFamily">@font/opensans_regular</item>
+    </style>
+
+    <style name="Style_TextView">
+        <item name="fontFamily">@font/opensans_regular</item>
+        <item name="colorControlNormal">@color/buttonborder</item>
+        <item name="colorControlActivated">@color/buttonborder</item>
+        <item name="colorControlHighlight">@color/buttonborder</item>
+        <!-- <item name="android:textSize">16sp</item>-->
+
     </style>
 </resources>

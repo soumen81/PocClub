@@ -36,8 +36,10 @@
     <color name="colorAsh">#cfcbcb</color>
     <color name="colorBgAsh">#F9F9F9</color>
     <color name="ripplecolor">#801bb392</color>
+    <color name="colorBadge">#9f9d9e</color>
+    <color name="yellowColor">#F3D439</color>
 
-
-
+    <color name="buttonColor">#d23e34</color>
+    <color name="blackColor">#000000</color>
 
 </resources>

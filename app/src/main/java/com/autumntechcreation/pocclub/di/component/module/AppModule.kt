@@ -3,7 +3,8 @@ package com.autumntechcreation.pocclub.di.component.module
 import android.app.Application
 import androidx.lifecycle.ViewModelProvider
 import com.autumntechcreation.pocclub.network.Webservice
-import com.autumntechcreation.pocclub.ui.register.RegistrationFactory
+import com.autumntechcreation.pocclub.ui.login.LoginModelFactory
+import com.autumntechcreation.pocclub.ui.register.RegisterModelFactory
 import dagger.Module
 import dagger.Provides
 import retrofit2.Retrofit
@@ -24,5 +25,9 @@ class AppModule(val app: Application) {
 
     @Provides
     @Singleton
-    fun provideRegistrationFactory(factory: RegistrationFactory): ViewModelProvider.Factory = factory
+    fun provideRegisterModelFactory(factory: RegisterModelFactory): ViewModelProvider.Factory = factory
+
+    @Provides
+    @Singleton
+    fun provideLoginModelFactory(factory: LoginModelFactory): ViewModelProvider.Factory = factory
 }
